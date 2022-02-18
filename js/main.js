@@ -25,18 +25,6 @@ let chonSP = document.querySelectorAll(".img_Glasses");
 chonSP.forEach((value,i) => {
     chonSP[i].addEventListener("click",()=>{
         hienSP(i);
-        document.querySelector(".btn-before").addEventListener("click",()=>{
-            i--;
-            if(i >= 0 && i < chonSP.length){
-                hienSP(i);
-            }else i = 0;
-        });
-        document.querySelector(".btn-after").addEventListener("click",()=>{
-            i++;
-            if(i >= 0 && i < chonSP.length){
-                hienSP(i);
-            }else i = hienSP(i) - 1;
-        });
     });
 });
 
